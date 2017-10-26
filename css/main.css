@@ -82,19 +82,131 @@ section.start{
 .center{
 	width: 80%;
 	margin:0 auto;
+	padding: 40px;
+	box-sizing: border-box;
+}
+.start h2{
+	font-size: 40px;
+	margin-bottom: 0;
+	color:#352384;
+	line-height: 1em;
+}
+.start p{
+	margin-top: 5px;
+	color:#352384;
+}
+.start input{
+	width: 100%;
+	border:none;
+	border-bottom: .5px solid #352384;
+	padding-bottom: 10px;
+	font-size:14px;
 }
 /*//////////////////////////////////////*/
 .reasons{
 	background:linear-gradient(to bottom, #76278F 30%,#2B1E66 );
 	width: 100%;
-	padding:80px 0;
+	padding:80px 130px;
+	box-sizing: border-box;
 	overflow: hidden;
+	color:#FFF;
+
+}
+.reasons p{
+	margin-bottom: 50px;
 }
 .reasons img{
 	width: 500px;
 	float: right;
+	margin-left: 100px;
 }
 /*/////////////////////////////////////////////////*/
-section.videos{
+.margin-less{
+	margin-bottom: -4px;
+	margin-top: -4px;
+}
+h6{
+	font-size: 11px;
+	margin: 0;
+}
+h3{
+	margin: 0 0 25px 0;
+	font-size: 28px;
+}
+.text-left{
+	float: left;
+	display: inline-block;
+	padding: 40px;
+	width: 30%;
+	box-sizing: border-box;
+	height: 510px;
+}
+.text-right{
+	float: right;
+	display: inline-block;
+	padding: 40px;
+	width: 30%;
+	box-sizing: border-box;
+	height: 510px;
+}
+iframe{
+	width: 70%;
+	height: 510px;
+}
+/*////////////////////////*/
+footer{
+	background: #333447;
+	width: 100%;
+	padding-top: 60px;
+	overflow: hidden;
+}
+footer ul{
+	display: inline-block;
+	list-style: none;
+	margin:0 6%
+}
+.footer-list li{
+	color:#FFF;
+	margin-bottom: 23px;
+}
+.footer-list li:first-child{
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+footer li img{
+	width: 130px;
+	margin-top: 17px;
+}
+footer div:first-child{
+	width: 90%;
+	margin:0 auto;
+}
+footer div:last-of-type{
+	text-align: center;
+	font-size: 1.2em;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 50px;
 
+}
+footer hr{
+	border:.5px solid white;
+	width: 50%;	
+	margin: 30px auto;
+}
+.icon{
+	color:#FFF;
+	border:.5px solid #FFF;
+	width: 35px;
+	height: 35px;
+	line-height: 1.85em;
+	border-radius: 50%;
+	margin: 0 35px;
+}
+footer p{
+	color:#FFF;
+	text-align: center;
+	font-size: 15px;
+	padding: 30px 0 60px 0;
 }
