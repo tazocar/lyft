@@ -1,3 +1,100 @@
 /*
- * Estilos de tu proyecto
+Botones, hover: #FF00BF
+Fondo de footer: #333447
+Título del formulario: #352384
+Texto del formulario: #728099
+Gradiente morado: linear-gradient(#76278F, #2B1E66);
  */
+ .text-uppercase {
+  text-transform: uppercase;
+}
+ body{
+ 	margin: 0;
+ 	font-family: 'Montserrat', sans-serif;
+ }
+ header{
+ 	width: 100%;
+ 	/*background-color: #2A2740;*/
+ 	position: fixed;
+ 	top: 0;
+ 	height: 120px;
+ 	padding-left: 85px;
+ 	z-index: 2;
+ }
+ header img{
+ 	width: 60px;
+ 	float: left;
+ }
+ .menu{
+ 	/*background:red;*/
+ 	width: 85%;
+ 	margin: 35px auto;
+ 	overflow: hidden;
+ 	
+ 	float: left;
+ }
+ .menu ul{
+ 	/*outline: 1px solid red;*/
+ 	margin: 0;
+ 	padding: 0;
+ 	display:inline-block;
+ 	float: right
+ 	
+ }
+ .menu li{
+ 	/*outline: 1px solid blue;*/
+ 	display: inline-block;
+ 	list-style: none;
+ 	padding: 12px;
+ 	margin-left: 32px;
+ 	font-size: 1.1em;
+ }
+ .menu li:last-child{
+ 	border:1px solid #FFF;
+ 	border-radius: 5px;
+ 	padding: 12px 16px;
+ }
+ .menu li a{
+ 	text-decoration: none;
+ 	color: #FFF;
+ }
+ .menu li a:hover{
+ 	color: #FF00BF;
+ }
+ .menu li a.login:hover{
+ 	color: #FFF;
+ }
+/*/////////////////////////////////////////////////*/
+section.start{
+	width: 100%;
+	height: 560px;
+	/*primer linear, sobre img, segundo linear, bajo img*/
+	background: linear-gradient(to bottom, transparent 85%,#76278F), url("../assets/images/hero.gif") no-repeat 75% 54%, linear-gradient(to bottom, #190F2F,#691B84);
+	background-size: 100%;
+}
+.invite{
+	background:#FFF;
+	width: 42%;
+	float: right;
+	margin-top: 110px;
+	height: 450px;
+}
+.center{
+	width: 80%;
+	margin:0 auto;
+}
+/*//////////////////////////////////////*/
+.reasons{
+	background:linear-gradient(to bottom, #76278F 30%,#2B1E66 );
+	width: 100%;
+	padding:80px 0;
+	overflow: hidden;
+}
+.reasons img{
+	width: 500px;
+	float: right;
+}
+/*/////////////////////////////////////////////////*/
+section.videos{
+
+}
