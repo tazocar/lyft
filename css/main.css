@@ -208,6 +208,9 @@ footer ul{
 	text-transform: uppercase;
 	font-size: 20px;
 }
+.footer-list li:first-child :hover{
+	color: #FFF;
+}
 footer a{
 	color: #FFF;
 	text-decoration: none;
@@ -234,7 +237,6 @@ footer div:last-of-type{
 	width: 90%;
 	margin: 0 auto;
 	padding-top: 50px;
-
 }
 footer hr{
 	border:.5px solid white;
