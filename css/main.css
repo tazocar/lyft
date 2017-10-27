@@ -12,15 +12,22 @@ Gradiente morado: linear-gradient(#76278F, #2B1E66);
  	margin: 0;
  	font-family: 'Montserrat', sans-serif;
  }
+/*///////////////////////////////   HEADER (ESTÁTICO)   //////////////////////////////////*/
  header{
  	width: 100%;
- 	/*background-color: #2A2740;*/
+ 	/*background: #2A2740;*/
  	position: fixed;
  	top: 0;
  	height: 120px;
  	padding-left: 85px;
  	z-index: 2;
+ 	transition: background ease .6s;
  }
+ /*intento de efecto para que no se pierda el menu*/
+ header:hover{
+ 	background:#2A2740;
+ }
+ /*Logo Header*/
  header img{
  	width: 60px;
  	float: left;
@@ -64,36 +71,38 @@ Gradiente morado: linear-gradient(#76278F, #2B1E66);
  .menu li a.login:hover{
  	color: #FFF;
  }
-/*/////////////////////////////////////////////////*/
+/*///////////////////////////////////   COMIENZA PRIMERA SECCIÓN (START)   /////////////////////////////////////*/
 section.start{
 	width: 100%;
 	height: 560px;
 	/*primer linear, sobre img, segundo linear, bajo img*/
-	background: linear-gradient(to bottom, transparent 85%,#76278F), url("../assets/images/hero.gif") no-repeat 75% 54%, linear-gradient(to bottom, #190F2F,#691B84);
+	background: linear-gradient(to bottom, transparent 85%,#70268C), url("../assets/images/hero.gif") no-repeat 75% 54%, linear-gradient(to bottom, #190F2F,#691B84);
 	background-size: 100%;
 }
 .invite{
 	background:#FFF;
-	width: 42%;
+	width: 41%;
 	float: right;
-	margin-top: 110px;
-	height: 450px;
+	margin-top: 120px;
+	padding: 66px 0 30px 0;
+	box-sizing: border-box;
 }
 .center{
-	width: 80%;
+	width: 75%;
 	margin:0 auto;
-	padding: 40px;
 	box-sizing: border-box;
 }
 .start h2{
 	font-size: 40px;
-	margin-bottom: 0;
+	margin: 0;
 	color:#352384;
 	line-height: 1em;
 }
-.start p{
+.start h5{
 	margin-top: 5px;
 	color:#352384;
+	line-height: 2em;
+	font-size: .9em;
 }
 .start input{
 	width: 100%;
@@ -101,30 +110,52 @@ section.start{
 	border-bottom: .5px solid #352384;
 	padding-bottom: 10px;
 	font-size:14px;
+	font-family: 'Montserrat';
+	outline: none;
 }
-/*//////////////////////////////////////*/
+#btn-sign{
+	padding: 15px 18px;
+	color: #FFF;
+	background: #FF00BF;
+	display: inline-block;
+	border-radius: 7px;
+	text-decoration: none;
+	margin: 40px 20px 20px 0;
+}
+.sign-up{
+	color:#728099; 
+}
+.text-small{
+	color:#728099; 
+	font-size: .6em;
+}
+.text-small a{
+	color:#8B97AB; 
+	text-decoration: none;
+}
+.start a:hover{
+	color:#FF00BF;
+	text-decoration: underline;
+}
+/*///////////////////////////////////   COMIENZA SEGUNDA SECCIÓN (REASONS)   /////////////////////////////////////*/
 .reasons{
-	background:linear-gradient(to bottom, #76278F 30%,#2B1E66 );
+	background:linear-gradient(to bottom, #70268C 20%,#2B1E66 );
 	width: 100%;
-	padding:80px 130px;
+	padding:60px 0;
 	box-sizing: border-box;
 	overflow: hidden;
 	color:#FFF;
 
 }
 .reasons p{
-	margin-bottom: 50px;
+	margin-bottom: 6%;
+	width: 40%;
 }
 .reasons img{
-	width: 500px;
+	width: 44%;
 	float: right;
-	margin-left: 100px;
 }
-/*/////////////////////////////////////////////////*/
-.margin-less{
-	margin-bottom: -4px;
-	margin-top: -4px;
-}
+/*///////////////////////////////////   COMIENZA TERCERA SECCIÓN (VIDEOS)   /////////////////////////////////////*/
 h6{
 	font-size: 11px;
 	margin: 0;
@@ -152,8 +183,9 @@ h3{
 iframe{
 	width: 70%;
 	height: 510px;
+	display: block;
 }
-/*////////////////////////*/
+/*///////////////////////////////////   COMIENZA FOOTER   /////////////////////////////////////*/
 footer{
 	background: #333447;
 	width: 100%;
@@ -163,16 +195,26 @@ footer{
 footer ul{
 	display: inline-block;
 	list-style: none;
-	margin:0 6%
+	margin:0 6%;
+	padding: 0;
 }
 .footer-list li{
 	color:#FFF;
-	margin-bottom: 23px;
+	margin-bottom: 25px;
+	font-weight: lighter;
 }
 .footer-list li:first-child{
 	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 20px;
+}
+footer a{
+	color: #FFF;
+	text-decoration: none;
+}
+footer a:hover{
+	color: #FF00BF;
+	text-decoration: underline;
 }
 footer li img{
 	width: 130px;
@@ -181,6 +223,10 @@ footer li img{
 footer div:first-child{
 	width: 90%;
 	margin:0 auto;
+	/*equidistancia entre elementos del div*/
+	display: flex;
+	justify-content: space-between;
+
 }
 footer div:last-of-type{
 	text-align: center;
